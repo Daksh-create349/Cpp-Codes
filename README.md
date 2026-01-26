@@ -22,7 +22,7 @@ The codebase is organized into folders for each lecture, containing relevant `.c
 *   **Lecture 12**: Pointers (Advanced) & Memory Management
 *   **Lecture 13**: Polymorphism & Exception Handling
 
-*(Note: The above generic topics are inferred from common C++ curriculum structures. Please verify the exact contents of each folder.)*
+
 
 ## How to Compile and Run
 
@@ -34,10 +34,4 @@ g++ basic_arithmetic_operations.cpp -o basic_arithmetic_operations
 ./basic_arithmetic_operations
 ```
 
-## Authors
-- Daksh Srivastava
-- Prathamesh More
 
-## License
-
-This project is open source.
