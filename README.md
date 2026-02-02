@@ -26,16 +26,4 @@ The codebase is organized into folders for each lecture, containing relevant `.c
 
 To compile any of the C++ files, you can use a C++ compiler like `g++`.
 
-```bash
-cd "Lecture 1"
-g++ basic_arithmetic_operations.cpp -o basic_arithmetic_operations
-./basic_arithmetic_operations
-```
 
-## Authors
-- Daksh Srivastava
-- Prathamesh More
-
-## License
-
-This project is open source.
