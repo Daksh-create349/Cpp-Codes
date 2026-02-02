@@ -15,6 +15,6 @@ class Student{
 int main(){
     Student s1;
     s1.rollNo = 69;
-    s1.name = "Prathamesh";
+    s1.name = "Daksh";
     s1.display();
 }
