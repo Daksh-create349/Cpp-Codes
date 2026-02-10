@@ -1,35 +1,40 @@
-
-
 #include <iostream>
 using namespace std;
 
-class Sample {
+class Sample
+{
 private:
-    int* p;  
+    int *data; // pointer for dynamic memory
 
 public:
-    
-    Sample(int value) {
-        p = new int;    
-        *p = value;
-        cout << "Memory allocated and value set to " << *p << endl;
+    // Constructor: allocates memory
+    Sample(int val)   // receive value, not pointer
+    {
+        data = new int;   // dynamic allocation
+        *data = val;      // store value
+
+        cout << "Memory allocated and value set to " << *data << endl;
     }
 
-    
-    void display() {
-        cout << "Value stored in dynamic memory: " << *p << endl;
+    // Function to display value
+    void display()
+    {
+        cout << "Value stored in dynamic memory: " << *data << endl;
     }
 
-    
-    ~Sample() {
-        delete p;        
+    // Destructor: frees memory
+    ~Sample()
+    {
+        delete data;   // free memory
         cout << "Memory deallocated" << endl;
     }
 };
 
-int main() {
-    Sample obj(50);  
-    obj.display();    
+int main()
+{
+    Sample obj(50); // constructor called
 
-    return 0;         
+    obj.display();
+
+    return 0;
 }
